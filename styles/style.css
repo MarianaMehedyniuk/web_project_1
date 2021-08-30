@@ -262,15 +262,12 @@
   /*parameters that control the image*/
 }
 
-.dark_theme {
-  background-color: #1f1f1f;
-  color: white;
-}
-
 /* styles for the kaufman section */
 
 .kaufman {
   overflow: hidden;
+  background-color: #1f1f1f;
+  color: white;
   /*parameters that control the entire kaufman section*/
 }
 
@@ -345,6 +342,8 @@
   min-height: 350px;
   width: 90%;
   margin: 60px auto 40px auto;
+  background-color: #1f1f1f;
+  color: white;
   /*parameters that control the entire footer section*/
 }
 
