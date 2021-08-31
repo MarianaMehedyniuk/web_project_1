@@ -348,18 +348,40 @@
   background-color: #1f1f1f;
   color: white;
   min-height: 350px;
-  display: flex;
+  /*general parameters for the footer*/
 }
 
 .footer__columns {
-  padding: 60px auto 40px;
   width: 90%;
-  /*block 1*/
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /*this is the section that controls container for three columns*/
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
-  /*block 2*/
+  /*this is the section that controls logo and author*/
+}
+
+.logo_place_footer {
+  display: flex;
+  width: 183px;
+  height: 35px;
+  /*this is the section that controls logo placement*/
+}
+
+.footer__author {
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  /*this is the section that controls info about the author*/
 }
 
 .footer__column_content_about {
@@ -372,23 +394,6 @@
   display: flex;
   flex-direction: column;
   /*block 4*/
-}
-
-.logo_place_footer {
-  display: flex;
-  width: 183px;
-  height: 35px;
-  /*block 5*/
-}
-
-.footer__author {
-  margin-top: 18px;
-  margin-bottom: 18px;
-
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  /*block 6*/
 }
 
 .footer__column-heading {
