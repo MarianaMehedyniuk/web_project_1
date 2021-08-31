@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 100px;
   /* parameters for the header section */
 }
 
@@ -93,8 +94,12 @@
 
 /*styles that control description section*/
 
-.two-columns {
+.description {
   display: flex;
+  margin-bottom: 100px;
+}
+
+.two-columns {
   justify-content: center;
   align-items: space-between;
   align-content: flex-start;
@@ -142,25 +147,31 @@
 
 /* styles that control digits section */
 
+.digits {
+  margin-bottom: 100px;
+}
+
 .section-title {
   width: 60%;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 20px;
   /*parameters that control positioning of the h2 title*/
 
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
   /*parameters that control text appearance*/
 }
 
 .section-subtitle {
   width: 60%;
-  margin: 20px auto 0 auto;
+  margin: auto;
   /*parameters that control positioning of the h3 subtitle*/
 
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
   /*parameters that control text appearance*/
 }
 
@@ -209,16 +220,19 @@
 .feynman {
   height: 790px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   /*parameters of the block*/
+
+  background-image: url("/images/feynman.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  /*parameters of the image*/
 }
 
 .feynman__title {
   width: 775px;
-  z-index: 1;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 70px auto;
   /*parameters that control the positioning*/
 
   line-height: 1.15;
@@ -229,8 +243,7 @@
 }
 
 .feynman__subtitle {
-  margin: 70px auto;
-  z-index: 1;
+  margin: 0 auto;
   /*parameters that control the positioning*/
 
   line-height: 51px;
@@ -253,28 +266,19 @@
   /*parameters that control the text appearance*/
 }
 
-.feynman__image {
-  width: 867px;
-  height: 637px;
-  position: absolute;
-  left: 0;
-  bottom: 100;
-  /*parameters that control the image*/
-}
-
 /* styles for the kaufman section */
 
 .kaufman {
   overflow: hidden;
   background-color: #1f1f1f;
   color: white;
+  position: relative;
   /*parameters that control the entire kaufman section*/
 }
 
 .section-title_theme_dark {
   width: 60%;
-  margin: 0px auto 20px auto;
-  padding-top: 90px;
+  margin: 90px auto 20px auto;
   /*parameters that control positioning*/
 
   text-align: center;
@@ -286,19 +290,20 @@
 
 .section-subtitle_theme_dark {
   width: 60%;
-  margin: 0px auto 80px auto;
+  margin: 0px auto 0px auto;
   /*parameters that control positioning*/
 
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
   /*parameters that control text appearance*/
 }
 
 .table_theme_dark {
   list-style-type: none;
   width: 1100px;
-  margin: 80px auto 0px auto;
+  margin: 0px auto 90px auto;
   padding-bottom: 90px;
   display: flex;
   justify-content: space-between;
@@ -332,6 +337,7 @@
 
 .kaufman__triangle {
   position: absolute;
+  top: 0px;
   right: -124px;
   /*parameters that control the triangle appearance*/
 }
@@ -339,72 +345,76 @@
 /*styles for the footer block*/
 
 .footer {
-  min-height: 350px;
-  width: 90%;
-  margin: 60px auto 40px auto;
   background-color: #1f1f1f;
   color: white;
-  /*parameters that control the entire footer section*/
+  min-height: 350px;
+  display: flex;
 }
 
 .footer__columns {
-  flex-basis: 711px;
+  padding: 60px auto 40px;
+  width: 90%;
+  /*block 1*/
 }
 
 .footer__column_content_copyright {
+  flex-basis: 711px;
+  /*block 2*/
 }
 
 .footer__column_content_about {
+  display: flex;
+  flex-direction: column;
+  /*block 3*/
 }
 
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
+  /*block 4*/
 }
 
 .logo_place_footer {
   display: flex;
-  height: 35px;
   width: 183px;
-  /*parameters that control the logo*/
+  height: 35px;
+  /*block 5*/
 }
 
 .footer__author {
   margin-top: 18px;
   margin-bottom: 18px;
-  /*parameters to control positioning*/
 
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  /*parameters that control the text*/
+  /*block 6*/
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
-  /*parameters that control positioning*/
-
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  /*parameters that control the text*/
+  /*block 7*/
 }
 
 .footer__list {
-  padding: 0;
   list-style: none;
-  /*parameters that control the list appearance*/
-}
-
-.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  /*parameters that control the text*/
+  padding: 0;
+  /*block 8*/
+}
+
+.footer__column-link {
+  margin-top: 20px;
+  /*block 9*/
 }
 
 .footer__social-icons {
   height: 16px;
   width: 16px;
-  margin-right: 20px;
+  margin-right: 10px;
+  /*block 10*/
 }
