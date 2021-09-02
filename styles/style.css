@@ -1,21 +1,13 @@
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: "Helvetica Neue", Arial, sans-serif;
-  /* reseting padding properties at the block level*/
   padding: 0;
   background-color: #f2f2f2;
 }
 
-/*styles that control header section*/
-
 .logo {
-  /* parameters for both header and footer logos*/
   width: 154px;
   height: 31px;
 }
@@ -25,7 +17,6 @@
   top: 30px;
   left: 64px;
   z-index: 100;
-  /* parameters for header logo*/
 }
 
 .header {
@@ -36,30 +27,25 @@
   justify-content: center;
   flex-direction: column;
   margin-bottom: 100px;
-  /* parameters for the header section */
 }
 
 .header__title {
-  /* position parameters for the header title */
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   z-index: 100;
 
-  /* text styles for the header title*/
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
 
 .header__subtitle {
-  /* position parameters for the header subtitle */
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   z-index: 100;
 
-  /* text styles for the header subtitle*/
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -67,7 +53,6 @@
 
 .header__link {
   color: #2f80ed;
-  /* parameters for the link used in the header*/
 }
 
 .header__main-illustration {
@@ -77,10 +62,8 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-  /* parameters for the main illustration of the header */
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -89,10 +72,7 @@
   top: 0;
   right: 0;
   margin-top: 64px;
-  /* parameters for the blue square used in the header */
 }
-
-/*styles that control description section*/
 
 .description {
   display: flex;
@@ -105,74 +85,61 @@
   align-content: flex-start;
   margin-top: 100px;
   margin-bottom: 100px;
-  /*parameters for positioning of the main text block*/
 }
 
 .two-columns__brief {
   width: 175px;
   margin: 0;
-  /*parameters that control h2 element positioning*/
 
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  /*parameters that control the text appearance*/
 }
 
 .two-columns__main-text {
   min-width: 784px;
-  width: 80%;
-  /*parameters that control the positioning of the main text*/
+  max-width: 80%;
 }
 
 .two-columns__paragraph {
   justify-content: space-between;
   padding: 0 0 30px 0;
   margin: 0;
-  /*parameters that control the positioning of three paragraphs within the main text block*/
 
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  /*parameters that control the text appearance*/
 }
 
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
-  /*parameters that control the text appearance*/
 }
-
-/* styles that control digits section */
 
 .digits {
   margin-bottom: 100px;
 }
 
 .section-title {
-  width: 60%;
+  max-width: 60%;
   margin: 100px auto 20px;
-  /*parameters that control positioning of the h2 title*/
 
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  /*parameters that control text appearance*/
 }
 
 .section-subtitle {
-  width: 60%;
+  max-width: 60%;
   margin: auto;
-  /*parameters that control positioning of the h3 subtitle*/
 
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  /*parameters that control text appearance*/
 }
 
 .table {
@@ -190,134 +157,109 @@
 
 .table__heading {
   margin: 0 0 0 20px;
-  /*parameters that control positioning of the table heading*/
 
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  /*parameters that control the text appearance*/
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  /*parameters that control the text appearance*/
 }
 
-.table__text-credentials {
-  padding-top: 20px;
-  /*parameters that control positioning of the credentials*/
+*.table__text-credentials {
+  padding: 20px 0 0 0;
+  margin-bottom: 60px;
 
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  /*parameters that control the text appearance*/
 }
 
-/* styles that control feynman section */
-
-.feynman {
+* .feynman {
   height: 790px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  /*parameters of the block*/
 
   background-image: url("/images/feynman.png");
   background-position: left bottom;
   background-repeat: no-repeat;
-  /*parameters of the image*/
 }
 
 .feynman__title {
-  width: 775px;
-  margin: 100px auto 70px auto;
-  /*parameters that control the positioning*/
+  max-width: 775px;
+  margin: 40px auto 70px auto;
 
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   text-align: center;
-  /*parameters that control the text appearance*/
 }
 
 .feynman__subtitle {
   margin: 0 auto;
-  /*parameters that control the positioning*/
 
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  /*parameters that control the text appearance*/
 }
 
 .feynman__link {
   position: absolute;
   right: 0;
-  margin-top: 395px;
-  margin-right: 48px;
-  /*parameters that control the positioning*/
+  margin: 395px 48px 0 0;
 
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
-  /*parameters that control the text appearance*/
 }
-
-/* styles for the kaufman section */
 
 .kaufman {
   overflow: hidden;
   background-color: #1f1f1f;
   color: white;
   position: relative;
-  /*parameters that control the entire kaufman section*/
 }
 
 .section-title_theme_dark {
-  width: 60%;
+  max-width: 60%;
   margin: 90px auto 20px auto;
-  /*parameters that control positioning*/
 
   text-align: center;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
-  /*parameters that control text appearance*/
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
+  max-width: 60%;
   margin: 0px auto 0px auto;
-  /*parameters that control positioning*/
 
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  /*parameters that control text appearance*/
 }
 
 .table_theme_dark {
   list-style-type: none;
   width: 1100px;
   margin: 0px auto 90px auto;
-  padding-bottom: 90px;
+  padding: 0 0 90px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*parameters that control positioning*/
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 80px 0 0 0;
   z-index: 100;
-  /*dark theme parameters - cells*/
 }
 
 .table__heading_theme_dark {
@@ -325,30 +267,24 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  /*parameters that control text appearance*/
 }
 
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  /*parameters that control text appearance*/
 }
 
 .kaufman__triangle {
   position: absolute;
   top: 0px;
   right: -124px;
-  /*parameters that control the triangle appearance*/
 }
-
-/*styles for the footer block*/
 
 .footer {
   background-color: #1f1f1f;
   color: white;
   min-height: 350px;
-  /*general parameters for the footer*/
 }
 
 .footer__columns {
@@ -356,7 +292,6 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  /*this is the section that controls container for three columns*/
 }
 
 .footer__column_content_copyright {
@@ -364,43 +299,36 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
-  /*this is the section that controls logo and author*/
 }
 
 .logo_place_footer {
   display: flex;
   width: 183px;
   height: 35px;
-  /*this is the section that controls logo placement*/
 }
 
 .footer__author {
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin: 18px 0 18px 0;
 
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  /*this is the section that controls info about the author*/
 }
 
 .footer__column_content_about {
   display: flex;
   flex-direction: column;
-  /*block 3*/
 }
 
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
-  /*block 4*/
 }
 
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  /*block 7*/
 }
 
 .footer__list {
@@ -409,17 +337,14 @@
   font-size: 18px;
   font-weight: normal;
   padding: 0;
-  /*block 8*/
 }
 
 .footer__column-link {
-  margin-top: 20px;
-  /*block 9*/
+  margin: 20px 0 0 0;
 }
 
 .footer__social-icons {
   height: 16px;
   width: 16px;
-  margin-right: 10px;
-  /*block 10*/
+  margin: 0 10px 0 0;
 }
