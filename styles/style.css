@@ -4,7 +4,6 @@
   margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
   padding: 0;
-  background-color: #f2f2f2;
 }
 
 .logo_place-header {
@@ -24,13 +23,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 64px auto 100px;
+  margin: 0 auto 100px;
   background-color: #f2f2f2;
 }
 
 .header__title {
   max-width: 730px;
-  margin: 0 64px;
+  margin: 0 0 0 64px;
   z-index: 100;
 
   line-height: 96px;
@@ -70,26 +69,24 @@
   width: 568px;
   background-color: #2f80ed;
   position: absolute;
-  top: 0;
+  top: 64px;
   right: 0;
 }
 
 .description {
   display: flex;
-  margin: 100px;
-  background-color: #f2f2f2;
+  margin: 0;
+  background-color: white;
 }
 
 .two-columns {
   display: flex;
-  min-width: 784px;
   width: 80%;
   margin: auto;
 }
 
 .two-columns__brief {
   width: 175px;
-  margin: 0 auto;
   display: flex;
   align-items: flex-start;
 
@@ -129,7 +126,7 @@
 
 .digits {
   margin-bottom: 100px;
-  background-color: #f2f2f2;
+  background-color: white;
 }
 
 .section-title {
@@ -164,10 +161,11 @@
 
 .table__cell {
   width: 250px;
+  margin: 0 0 60px 0;
 }
 
 .table__heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 
   line-height: 1.15;
   font-size: 24px;
@@ -178,10 +176,10 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
-* .feynman {
+.feynman {
   min-height: 790px;
   display: flex;
   align-items: center;
@@ -190,11 +188,12 @@
   background-image: url("/images/feynman.png");
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
 }
 
 .feynman__title {
   max-width: 775px;
-  margin: 40px auto 70px auto;
+  margin: 100px auto 70px auto;
 
   line-height: 1.15;
   font-size: 120px;
@@ -224,72 +223,66 @@
 
 .kaufman {
   overflow: hidden;
+  position: relative;
   background-color: #1f1f1f;
   color: white;
-  position: relative;
 }
 
-.section-title_theme-dark {
-  max-width: 60%;
-  margin: 90px auto 20px auto;
-
-  text-align: center;
+.section-title_theme_dark {
+  width: 60%;
+  margin: 90px auto 20px;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
 }
 
-.section-subtitle_theme-dark {
-  max-width: 60%;
-  margin: 0px auto 0px auto;
-
+.section-subtitle_theme_dark {
+  width: 60%;
+  margin: auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  text-align: center;
 }
 
-.table_theme-dark {
-  list-style-type: none;
+.table_theme_dark {
   width: 1100px;
-  margin: 0px auto 90px auto;
-  padding: 0 0 90px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin: 80px auto 90px auto;
 }
 
-.table__cell_theme-dark {
-  width: 200px;
+.table__cell_theme_dark {
   color: white;
-  margin: 80px 0 0 0;
   z-index: 100;
+  width: 200px;
+  margin: 0 0 80px 0;
 }
 
-.table__heading_theme-dark {
+.table__heading_theme_dark {
+  margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
-.table__text_theme-dark {
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
 }
 
 .kaufman__triangle {
   position: absolute;
   top: 0px;
   right: -124px;
+  height: 660;
+  width: 636;
 }
 
 .footer {
   background-color: #1f1f1f;
   color: white;
   min-height: 350px;
-  padding: 60px auto 40px;
+  padding: 60px 0 40px 0;
   display: flex;
   box-sizing: border-box;
 }
@@ -301,14 +294,14 @@
   margin: 0 auto;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
 }
 
-.logo_place-footer {
+.logo_place_footer {
   display: flex;
   width: 183px;
   height: 35px;
@@ -322,21 +315,21 @@
   font-weight: normal;
 }
 
-.footer__column_content-about {
+.footer__column_content_about {
   display: flex;
   flex-direction: column;
 }
 
-.footer__column_content-social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
 }
 
-.footer__column-heading {
+.footer__column_heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0 0 0 20px;
 }
 
 .footer__list {
@@ -345,6 +338,7 @@
   font-size: 18px;
   font-weight: normal;
   padding: 0;
+  margin: 0;
 }
 
 .footer__column-link {
@@ -353,6 +347,7 @@
   font-weight: normal;
   padding: 0;
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .footer__social-icons {
