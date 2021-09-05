@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.logo_place-header {
+.logo_place_header {
   width: 154px;
   height: 31px;
 
@@ -89,6 +89,7 @@
   width: 175px;
   display: flex;
   align-items: flex-start;
+  margin: 0;
 
   line-height: 1.2;
   font-size: 18px;
@@ -274,8 +275,8 @@
   position: absolute;
   top: 0px;
   right: -124px;
-  height: 660;
-  width: 636;
+  height: 660px;
+  width: 636px;
 }
 
 .footer {
