@@ -127,6 +127,7 @@
 
 .digits {
   background-color: white;
+  margin: 0;
 }
 
 .section-title {
@@ -161,6 +162,7 @@
 
 .table__cell {
   width: 250px;
+  padding-bottom: 60px;
   margin: 0 0 60px 0;
 }
 
