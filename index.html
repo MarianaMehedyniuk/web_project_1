@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning how to learn</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="pages/index.css" />
   </head>
   <body class="page">
     <div class="page">
       <header class="header">
         <img
           class="logo logo_place_header"
-          src="images/logo_place_header.png"
+          src="images/part_1/logo_place_header.png"
           alt="Yandex Practicum logo placed in a header"
         />
         <h1 class="header__title">Learning How To Learn</h1>
@@ -23,13 +23,13 @@
         </p>
         <img
           class="header__main-illustration"
-          src="images/header-image.png"
+          src="/images/part_1/header-image.png"
           alt="Epic ponderer stood on a mountaintop
           deliberating over the finer points of the modern educational
           system, while also wondering where that giant blue square came
           from"
         />
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic rotation"></div>
       </header>
 
       <main class="content">
@@ -66,6 +66,92 @@
               </p>
             </div>
           </div>
+        </section>
+
+        <section class="techniques">
+          <h2 class="section-title">Learning Techniques</h2>
+          <p class="section-subtitle">Five Strategies from Barbara Oakley</p>
+          <img
+            src="images/part_2/cards-attention.png"
+            alt="Picture representing two ways of thinking, one of the Barbara Oakley learning strategies"
+          />
+          <h3>Two Ways of Thinking</h3>
+          <p>
+            Deep understanding comes from being able to toggle back and forth
+            between focused and diffused thinking.
+          </p>
+          <img
+            src="/images/part_2/cards-recall.png"
+            alt="Picture representing recall, one of the Barbara Oakley learning strategies"
+          />
+          <h3>Recall</h3>
+          <p>
+            Improving your ability to remember key bits of information helps to
+            connect different parts of the brain.
+          </p>
+          <img
+            src="/images/part_2/cards-interleaving.png"
+            alt="Picture representing interleaving, one of the Barbara Oakley learning strategies"
+          />
+          <h3>Interleaving</h3>
+          <p>
+            When you learn multiple skills at the same time, they reinforce each
+            other.
+          </p>
+          <img
+            src="/images/part_2/cards-question.png"
+            alt="Picture representing questions, one of the Barbara Oakley learning strategies"
+          />
+          <h3>Questions</h3>
+          <p>
+            When listening to your teacher, think up a good question, something
+            that you're really itching to know.
+          </p>
+          <img
+            src="/images/part_2/cards-competence.png"
+            alt="Picture representing illusio of competence, one of the Barbara Oakley learning strategies"
+          />
+          <h3>Illusion of Competence</h3>
+          <p>
+            Test yourself, write it down, tell other people, and repeat the
+            process in different settings. Only then can you be truly certain
+            you've understood something.
+          </p>
+        </section>
+
+        <section class="video">
+          <h2 class="section-title">TED talks</h2>
+          <p class="section-subtitle">For lovers of procrastination</p>
+          <iframe src="https://www.youtube.com/watch?v=5MgBikgcWnY"></iframe>
+          <iframe src="https://www.youtube.com/watch?v=arj7oStGLkU"></iframe>
+        </section>
+
+        <section class="oakley">
+          <div class="two-columns">
+            <h2 class="two-columns__brief">Barbara Oakley’s story.</h2>
+            <div class="two-columns__main-text">
+              <p class="two-columns__paragraph">
+                Math didn't come naturally to Barbara in childhood. She thought
+                of herself as more of a humanities person, and not a brilliant
+                one at that. With an eye to becoming a linguist, after school
+                she enlisted in the army, who sent her to learn Russian. After
+                several years of service, during which she rose to the rank of
+                Captain, Barbara left the army and decided to study engineering.
+                In was during this time that she developed her learning
+                methodology as she was forced to reprogram her brain for a
+                different kind of learning. It turns out that when something
+                doesn't come naturally to you, having to work hard to gain the
+                knowledge that other people may get at first glance gives you a
+                deeper, more comprehensive understanding of the subject matter.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="feynman">
+          <h2 class="feynman__title">The Feynman Technique</h2>
+          <p class="feynman__subtitle">Learn without forgetting</p>
+          <a class="feynman__link" href="#">More &rarr;</a>
         </section>
 
         <section class="digits">
@@ -134,10 +220,23 @@
           </ul>
         </section>
 
-        <section class="feynman">
-          <h2 class="feynman__title">The Feynman Technique</h2>
-          <p class="feynman__subtitle">Learn without forgetting</p>
-          <a class="feynman__link" href="#">More &rarr;</a>
+        <section class="khan">
+          <p>Salman Khan</p>
+          <h2>The One World Schoolhouse</h2>
+          <p>
+            Sal Khan's passion and innovation is transforming learning for
+            millions of students worldwide. The One World Schoolhouse is a
+            must-read for all who are committed to improving education so
+            students everywhere can gain the skills and knowledge to be
+            successful in school, careers and life.
+          </p>
+          <p>George Lucas</p>
+          <p>Filmmaker</p>
+          <a href="#">Buy book &rarr;</a>
+          <img
+            src="/images/part_2/khan-book-2.png"
+            alt="Cover of The One World Schoolhouse, a book by Salman Khan"
+          />
         </section>
 
         <section class="kaufman">
@@ -149,7 +248,7 @@
           </p>
           <img
             class="kaufman__triangle"
-            src="images/kaufman-triangle.svg"
+            src="/images/part_1/kaufman-triangle.svg"
             alt="A big blue triangle, over which Josh
             Kaufman claims ownership"
           />
@@ -225,13 +324,21 @@
             </li>
           </ul>
         </section>
+
+        <section class="resources">
+          <h2 class="section-title">Useful resources</h2>
+          <p class="section-subtitle">
+            Further materials on learning techniques and hacks.
+          </p>
+        </section>
       </main>
+
       <footer class="footer">
         <div class="footer__columns">
           <div class="footer__column footer__column_content_copyright">
             <img
               class="logo logo_place_footer"
-              src="images/logo_place_footer.png"
+              src="/images/part_1/logo_place_footer.png"
               alt="Yandex Logo"
             />
             <p class="footer__author">&copy; Mariana</p>
@@ -261,7 +368,7 @@
                     class="footer__column-link"
                     ><img
                       class="footer__social-icons"
-                      src="images/facebook_white.svg"
+                      src="/images/part_1/facebook_white.svg"
                       alt="Facebook Logo"
                     />Facebook</a
                   >
@@ -274,7 +381,7 @@
                   >
                     <img
                       class="footer__social-icons"
-                      src="/images/instagram_white.svg"
+                      src="/images/part_1/instagram_white.svg"
                       alt="Instagram Logo"
                     />Instagram</a
                   >

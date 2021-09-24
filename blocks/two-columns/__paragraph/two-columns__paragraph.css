@@ -1,0 +1,13 @@
+.two-columns__paragraph {
+  justify-content: space-between;
+  padding: 0 0 30px 0;
+  margin: auto;
+
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
+}
