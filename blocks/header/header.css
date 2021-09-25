@@ -13,6 +13,7 @@
   flex-direction: column;
   margin: 0 auto 100px;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .logo_place_header {
