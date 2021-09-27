@@ -6,6 +6,9 @@
 
 .cards {
   list-style-type: none;
-  width: 920px;
   display: flex;
+  width: 920px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: flex-start;
 }
