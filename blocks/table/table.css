@@ -1,6 +1,3 @@
-@import url(/blocks/table/__cell/table__cell.css);
-@import url(/blocks/table/__heading/table__heading.css);
-
 .table {
   list-style-type: none;
   display: flex;
