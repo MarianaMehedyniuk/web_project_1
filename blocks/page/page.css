@@ -6,11 +6,12 @@
   padding: 0;
 }
 
-a {
+.link {
   opacity: 1;
+  transition: opacity 0.2s ease-out;
 }
 
-a:hover {
+.link:hover {
   opacity: 0.5;
   transition: opacity 0.2s ease-out;
 }

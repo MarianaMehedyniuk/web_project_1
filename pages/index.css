@@ -1,4 +1,4 @@
-@import url(../styles/normalize.css);
+@import url(../vendor/normalize.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__description/cards__description.css);
 @import url(../blocks/cards/__image/cards__image.css);
@@ -15,7 +15,6 @@
 @import url(../blocks/footer/__social-icons/footer__social-icons.css);
 @import url(../blocks/footer/__list/footer__list.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
-@import url(../blocks/footer/__columns/_heading/footer__column_heading.css);
 @import url(../blocks/footer/__columns/_content/footer__column_content_about.css);
 @import url(../blocks/footer/__columns/_content/footer__column_content_copyright.css);
 @import url(../blocks/footer/__columns/_content/footer__column_content_social.css);
